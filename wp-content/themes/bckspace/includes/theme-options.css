@@ -1,0 +1,161 @@
+
+
+/* =Fields
+-------------------------------------------------------------- */
+
+.field-wrap {
+    margin: 10px 20px 50px 10px;
+}
+
+.field-wrap label {
+    width: 200px !important;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    padding: 3px 0 0 10px;
+    font-weight: bold;
+}
+
+.field-wrap input {
+    display: inline-block;
+    width: 360px;
+}
+
+.field-wrap .wp-editor-wrap {
+    width: 100%;
+    display: block;
+}
+
+.field-wrap textarea {
+    width: 360px;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.field-wrap input[type="checkbox"]{
+    width: auto;
+}
+
+.field-wrap .quicktags-toolbar input {
+    width: auto !important;
+}
+
+.jdev-wrapper {
+    width: 98%;
+    margin: 10px 0
+}
+
+.submit {
+    margin: 0 20px;
+}
+
+.field-wrap input[type="button"], input[type="submit"] {
+    width: 100px;
+    vertical-align: top;
+}
+
+.field-wrap .jdev-image-uploader {
+    width: 200px;
+    vertical-align: top;
+}
+
+.tabs hr {
+    border: none;
+    background: #f1f1f1;
+    height: 1px;
+    margin: 0 0 20px 0;
+}
+
+#tabs h3 {
+    color: #21759B;
+    margin: 0 20px;
+}
+
+
+
+
+.demoHeaders { margin-top: 2em; }
+#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+ul#icons {margin: 0; padding: 0;}
+ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+ul#icons span.ui-icon {float: left; margin: 0 4px;}
+			
+			
+			
+ /* jQuery UI Tabs 1.8.21
+ *
+ * Copyright 2012, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+ 
+.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: 2px 0 0;; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; clear:both; position: relative; top: 1px; margin: 0; border-bottom: 1px solid #D8D8D8; border-right: 1px solid #D8D8D8; padding: 0; width: 149px}
+.ui-tabs .ui-tabs-nav li a { display: block; font-size: 13px; font-weight:normal; padding: 7px 17px; text-decoration: none; color: #797979; font-family: sans-serif; line-height: 20px}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; background:  #FFFFFF; border-right: 1px solid #FFF; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; color: #21759B; font-weight: 700 }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block;  padding: 1em 1.4em; background: #FFF; color: #333; width: 608px; float:left; min-height:  600px; margin: 3px 0 0 0;}
+.ui-tabs .ui-tabs-hide { display: none !important; }
+		
+.options { 
+    background-color: #F1F1F1;
+    border-bottom: 1px solid #D8D8D8;
+    border-left: 1px solid #D8D8D8;
+    border-right: 1px solid #D8D8D8;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 798px;
+    float: left; 
+}	
+
+.nav {
+	float: left;
+	margin: 0;
+	padding: 0
+}
+
+.header img { float: right; }
+.header h2 { float: left; font-size: 25px; color: #464646; font-family:  "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif ; font-weight: normal; text-shadow: 0 1px 0 #FFFFFF; padding-top: 5px}	
+.header {
+    background: url("../../../../wp-admin/images/gray-grad.png") repeat-x scroll left top #DFDFDF;
+    border: 1px solid #CCCCCC;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 60px;
+    padding: 10px 15px;
+    margin: 15px 0 0 0 ;
+}
+
+
+.tabs { width: 800px; margin-left: 15px; }		
+			
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px,1px,1px,1px); }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 2.3; text-decoration: none; font-size: 100%; list-style: none; float: left}
+.ui-helper-clearfix:before, .ui-helper-clearfix:after { content: ""; display: table; }
+.ui-helper-clearfix:after {  }
+.ui-helper-clearfix { zoom: 1; }
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+.save-changes {
+    clear: both;
+    text-align: right;
+    background: url("../../../../wp-admin/images/gray-grad.png") repeat-x scroll left top #DFDFDF;
+    border: 1px solid #CCCCCC;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 50px;
+    padding: 10px 15px;
+}
+
+.logo-image {
+    margin-top: 20px;
+    max-height: 100px;
+    max-width: 600px;
+}
