@@ -29,7 +29,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     outline: 0;
 }
 body {
-    background: url(images/CBTL_background.jpg) no-repeat #FFF;
+    background: url(images/CBTL_background.jpg) repeat-x left top #FFF;
     line-height: 1;
     font: 13px/22px "Trebuchet MS", Arial, Helvetica, sans-serif;
     color: #887066;
@@ -389,7 +389,7 @@ select {
     display: inline-block;
     padding: 20px;
     width: 624px;
-    background: #FFF;
+    background: #f1f1f1;
     border-radius: 10px;
 }
 
@@ -468,9 +468,8 @@ ul.children li.comment { border-bottom: none;}
 
 .sub-section {
     border-radius: 10px;
-    width: 100%;
     padding: 20px;
-    background: #FFF;
+    background: #f1f1f1;
     margin: 20px 0;
 }
 
@@ -488,16 +487,14 @@ ul.children li.comment { border-bottom: none;}
 .sidebar-box {
     margin: 0 0 20px 0;
     padding: 17px;
-    background: #FFF;
+    background: url(images/widget-title.png) no-repeat #f1f1f1;
     border-radius: 10px;
 }
 
 .sidebar-title {
-    border-bottom: 1px dotted #27A9DF;
     color: #887066;
     font-size: 22px;
     text-decoration: none;
-    font-family: 'WisdomScriptAIRegular';
     display: block;
     padding: 0 0 10px 0;
     margin: 0 0 10px 0;
@@ -604,6 +601,17 @@ ul.children li.comment { border-bottom: none;}
 .nivo-controlNav a { padding: 5px }
 .nivo-controlNav a.active { background: #DDDDDD }
 .nivo-controlNav { text-align: right !important; position: absolute; width: 637px; }
+.nivo { background: url(images/showcase.png) no-repeat; padding: 2px; }
+.nivo-caption { display: none !important; }
+.slider-copy {
+    float: right;
+    width: 280px;
+    height: 96px;
+    clear: right;
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 14px
+}
 
 
 /* =CUSTOM FONTS

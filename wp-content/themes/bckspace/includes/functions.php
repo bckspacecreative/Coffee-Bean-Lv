@@ -686,8 +686,20 @@ function bck_get_sidebar_nav( $post ) {
       * 
       */
      function bck_slider_build() {
-            $args = array('post_type' => 'bck-slider', 'posts_per_page' => -1, 'order' => 'ASC');
+            $args = array('post_type' => 'bck-slider', 'posts_per_page' => 3, 'order' => 'ASC');
             $loop = new WP_Query($args);
+            
+            global $bck_excerpt_length;
+            $bck_excerpt_length = 20;
+            
+            while( $loop->have_posts()) : $loop->the_post();
+                echo '<div class="slider-copy">';
+                echo '<h2 class="entry-title">';
+                the_title();
+                echo '... </h2>';
+                the_excerpt();
+                echo '</div>';
+            endwhile;   
 
             echo '<div id="slider" class="nivoSlider">';
 
@@ -698,17 +710,17 @@ function bck_get_sidebar_nav( $post ) {
             wp_reset_query();
 
             echo '</div>';
-
-            $args = array('post_type' => 'bck-slider', 'posts_per_page' => -1, 'order' => 'ASC');
-            $loop = new WP_Query($args);
-
-            while ($loop->have_posts()) : $loop->the_post();
-                $page_title = get_the_ID();
-                echo '<div id="' . $page_title . '" class="nivo-html-caption">';
-                the_content();
-                echo '</div>';
-            endwhile;
-            wp_reset_query();       
+//
+//            $args = array('post_type' => 'bck-slider', 'posts_per_page' => 3, 'order' => 'ASC');
+//            $loop = new WP_Query($args);
+//
+//            while ($loop->have_posts()) : $loop->the_post();
+//                $page_title = get_the_ID();
+//                echo '<div id="' . $page_title . '" class="nivo-html-caption">';
+//                the_content();
+//                echo '</div>';
+//            endwhile;
+//            wp_reset_query();       
      }
      
      

@@ -11,8 +11,10 @@
 
 get_header(); ?>
     <div class="wrapper">
-        <div class="main-content">   
-            <?php if( function_exists('bck_slider_build') ) : bck_slider_build(); endif; ?>
+        <div class="main-content">
+            <div class="nivo">
+                <?php if( function_exists('bck_slider_build') ) : bck_slider_build(); endif; ?>
+            </div>
             <div class="sub-section">
                 
             </div>
