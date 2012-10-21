@@ -663,3 +663,6 @@ ul.children li.comment { border-bottom: none;}
 
 /* =CUSTOM FONTS
 ----------------------------------------------- */
+.new {
+    color: #000;
+}
