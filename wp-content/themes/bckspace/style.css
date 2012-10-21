@@ -238,11 +238,13 @@ a:hover {
     background: #FFF;
     border-radius: 10px;
     padding: 10px;
+    position: relative;
 }
 
 .navigation ul li {
     display: inline;
     margin: 0 0 0 10px;
+    position: relative;
 }
 
 .navigation ul li a {
@@ -263,9 +265,47 @@ a:hover {
     background-position: center bottom;
 }
 
-.navigation ul li ul {
-    display: none;
+/* Dropdown Navigation Starts */
+.navigation .dropdown {
+    background: url(images/droparrow.gif) no-repeat right top;
+    padding: 2px 15px 30px 0;
+    cursor: pointer;
 }
+.navigation ul ul ul {left: 130px; top: 0}
+.navigation ul ul { display: none }
+.navigation ul li:hover > ul {
+ display: block; 
+}
+ul.sub-menu {
+    position: absolute;
+    width: 130px; 
+    left: 0;
+    top: 30px;
+    background: #FFF;
+    z-index: 10;
+}
+
+ul.sub-menu li {
+    display: block;
+    border-right: 0;
+    padding: 10px 5px;
+}
+
+.navigation ul li a:hover ul.sub-menu {
+    display: block;
+}
+
+ul.sub-menu li a {
+    color: #999999;
+    font-weight: 200;
+    font-size: 12px
+}
+
+.sub-nav li ul.children { display: none }
+.sub-nav li.current_page_item ul.children { display: block; }
+.sub-nav li.current_page_item ul.children li { border: none }
+
+/* Dropdown Navigation Ends */
 
 .mini-nav { float: right }
 .mini-nav ul li { display: inline; border-right: 1px solid #2d3235; padding: 0 7px }
@@ -344,6 +384,22 @@ select {
 
 .error { color: #F00 }
 .success { font-weight: 700; font-size: 15px }
+
+
+/* =Home
+----------------------------------------------- */
+.sub-section {
+    border-radius: 10px;
+    padding: 20px;
+    background: #f1f1f1;
+    margin: 20px 0;
+    height: 220px;
+}
+
+.cta-home {
+    width: 300px;
+    float: left;
+}
 
 /* =Main Content 
 ----------------------------------------------- */
@@ -466,14 +522,6 @@ ul.children li.comment { border-bottom: none;}
 
 
 
-.sub-section {
-    border-radius: 10px;
-    padding: 20px;
-    background: #f1f1f1;
-    margin: 20px 0;
-}
-
-
 /* =Sidbar
 ----------------------------------------------- */
 .sidebar {
@@ -534,7 +582,6 @@ ul.children li.comment { border-bottom: none;}
     border-top: 1px dotted;
     margin: 30px auto;
     padding: 50px 0 5px;
-    width: 1075px;
 }
 
 .function-of-the-day {
@@ -614,9 +661,5 @@ ul.children li.comment { border-bottom: none;}
 }
 
 
-
 /* =CUSTOM FONTS
 ----------------------------------------------- */
-.maybe {
-    color: #000;
-}
