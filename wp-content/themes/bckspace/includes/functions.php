@@ -403,7 +403,7 @@ function bck_get_sidebar_nav( $post ) {
     function bck_twitter_feed() {
         
         ?>
-        <script type="text/javascript">
+         <script type="text/javascript">
             JQTWEET = {
 
             // Set twitter username, number of tweets & id/class to append tweets
@@ -425,7 +425,7 @@ function bck_get_sidebar_nav( $post ) {
                     },
                     success: function(data, textStatus, xhr) {
 
-                        var html = '<div class="tweet-wrap" id="tweet-wrap"><div class="twitter-quote"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-quote.png" border="0" alt="" /></div><div class="tweet"><p>TWEET_TEXT</p><div class="time">AGO</div></div>';
+                        var html = '<div class="tweet-wrap" id="tweet-wrap"><div class="twitter-quote"><img src="<?php echo get_template_directory_uri(); ?>/images/list-item.gif" border="0" alt="" /></div><div class="tweet"><p>TWEET_TEXT</p><div class="time">AGO</div></div>';
 
                         // append tweets into page
                         for (var i = 0; i < data.length; i++) {

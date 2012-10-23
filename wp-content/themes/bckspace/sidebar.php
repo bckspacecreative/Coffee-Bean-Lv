@@ -1,4 +1,3 @@
-
     <div class="sidebar">
 
 <?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
@@ -19,7 +18,16 @@
                 <?php wp_meta(); ?>
             </ul>
         </aside>
-
+        
 <?php endif; // end sidebar widget area ?>
-
+        <div class="sidebar-box">
+            <h3 class="sidebar-title">Twitter</h3>
+            <div class="text-widget">
+                <div class="twitter">
+                    <?php if(function_exists('bck_twitter_feed')) : bck_twitter_feed(); endif; ?>                 
+                </div><!-- end twitter -->
+            </div>
+        </div>
+        
+        
             </div><!-- end side bar -->

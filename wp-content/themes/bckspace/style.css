@@ -226,8 +226,8 @@ a:hover {
 /* =Navigation
 ----------------------------------------------- */
 .header-wrap {
-    height: 70px;
-    margin: 30px 0 50px 0; 
+    height: 90px;
+    margin: 30px 0 10px 0; 
 }
 
 .navigation {
@@ -243,7 +243,7 @@ a:hover {
 
 .navigation ul li {
     display: inline;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 13px;
     position: relative;
 }
 
@@ -321,43 +321,45 @@ ul.sub-menu li a {
 
 /* =Search
 ----------------------------------------------- */
+
 .search {
-    margin: 10px 0
+    margin: 0;
 }
 
 .search input[type="submit"] { 
-    border: none; 
-    display: inline-block; 
-    vertical-align: top; 
-    height: 26px; 
-    border: 1px solid #f1f1f1;
-    color: #999;
-    background: #FFF;
-    cursor: pointer
+    width: 78px;
+    height: 50px;
+    float: left;
+    font-size: 12px;
+    display: block;
+    cursor: pointer;
+    border: none;
+    background: url(images/search-button.png) no-repeat;
+    
 }
 
 .search input[type="text"] {
-    border: 1px solid #e6e6e6;
-    background: #FFF;
-    padding: 4px;
+    width: 148px;
     height: 16px;
-    color: #999;
-    display: inline-block;
-    vertical-align: top;
-    width: 161px;
+    padding: 17px;
+    font-size: 13px;
+    color: #828282;
+    display: block;
+    float: left;
+    border: none;
+    background: url(images/search-input.png) no-repeat;
 }
 
 /* =Forms
 ----------------------------------------------- */
 
-label {display: block; padding-left: 5px; font-weight: bold }
+label {padding-left: 5px; font-weight: bold }
 input[type="text"], textarea {
     border: 1px solid #e6e6e6;
     background: #FFF;
     padding: 4px;
     color: #999;
-    display: block;
-    width: 80%;
+    width: 150px;
 }
 
 input[type="submit"] {
@@ -385,6 +387,9 @@ select {
 .error { color: #F00 }
 .success { font-weight: 700; font-size: 15px }
 
+form p {
+    margin: 0
+}
 
 /* =Home
 ----------------------------------------------- */
@@ -396,9 +401,27 @@ select {
     height: 220px;
 }
 
+.cta-home img {
+    padding: 2px;
+    border: 1px solid #e7e5e5;
+    background: #FFF;
+}
 .cta-home {
-    width: 300px;
+    width: 280px;
     float: left;
+    background: url(images/gif.gif) repeat-y right top;
+    padding: 0 10px 0 0;
+    margin: 0 10px 0 0;
+}
+
+.cta-home:last-of-type {
+    background: none;
+}
+
+.cta-home h2 {
+    font-size: 28px;
+    color: #535353;
+    margin-bottom: 10px;
 }
 
 /* =Main Content 
@@ -529,7 +552,7 @@ ul.children li.comment { border-bottom: none;}
     padding: 0;
     vertical-align: top;
     width: 260px;
-    margin: 0 0 0 10px
+    margin: 0 0 0 10px;
 }
 
 .sidebar-box {
@@ -537,6 +560,13 @@ ul.children li.comment { border-bottom: none;}
     padding: 17px;
     background: url(images/widget-title.png) no-repeat #f1f1f1;
     border-radius: 10px;
+    clear: both;
+}
+
+.sidebar-box:first-of-type {
+    padding: 0;
+    background: none;
+    height: 46px;
 }
 
 .sidebar-title {
@@ -594,18 +624,19 @@ ul.children li.comment { border-bottom: none;}
     color: #999;
 }
 
+.tweet-wrap { margin: 0 0 20px 0 }
+.tweet-wrap img { margin-top: 7px }
 .tweet-wrap p {
-    margin: 10px 0
+    margin: 0 0 10px 0
 }
 
 .twitter {
     display: inline-block;
     vertical-align: top;
-    width: 350px;
 }
 
 .tweet a { color: #2d3235; font-weight: 700 }
-.tweet { width: 230px; margin: 0 0 0 10px; color: #2d3235; }
+.tweet { margin: 0 0 0 10px; color: #2d3235; width: 200px; }
 .tweet, .twitter-quote {
     display: inline-block;
     vertical-align: top;
@@ -648,21 +679,43 @@ ul.children li.comment { border-bottom: none;}
 .nivo-controlNav a { padding: 5px }
 .nivo-controlNav a.active { background: #DDDDDD }
 .nivo-controlNav { text-align: right !important; position: absolute; width: 637px; }
-.nivo { background: url(images/showcase.png) no-repeat; padding: 2px; }
+.nivo { background: url(images/showcase.png) no-repeat; padding: 2px; margin: 0 0 20px 0; }
 .nivo-caption { display: none !important; }
+.slider-copy h2 { margin: 10px 0 0 0 }
+.slider-copy p { margin: 5px 0; color: #919191 }
 .slider-copy {
     float: right;
     width: 280px;
     height: 96px;
     clear: right;
-    padding: 10px 0;
+    padding: 10px 5px;
     font-size: 12px;
-    line-height: 14px
+    line-height: 21px;
 }
 
+hr {
+    background: #5A3322;
+    height: 3px;
+    border: none;
+}
+
+
+/* =ACCORDIAN
+----------------------------------------------- */
+#accordion h3.ui-accordion-header {
+    color: #630;
+}
+
+#accordion .ui-accordion-content {
+    border: none;
+    background: none;
+    height: auto;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+border: 1px solid #CDC3B7;
+background: #EDE4D4 url(includes/accordion/images/ui-bg_glass_70_ede4d4_1x400.png) 50% 50% repeat-x;
+}
 
 /* =CUSTOM FONTS
 ----------------------------------------------- */
-.new {
-    color: #000;
-}

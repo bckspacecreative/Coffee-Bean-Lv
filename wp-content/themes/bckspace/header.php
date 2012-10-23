@@ -17,8 +17,6 @@
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri();  ?>/includes/slider/css/nivo-slider.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri();  ?>/includes/slider/css/style.css" type="text/css" media="screen" />
-        
-
         <!--[if IE 7]>
             <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/includes/ie-styles/ie7.css" />
         <![endif]-->
@@ -37,7 +35,6 @@
                 </div> <!-- end wrapper -->
          </div><!-- end header wrap -->
          
-             
 <!-- END HEADER -->
 
 
