@@ -35,6 +35,8 @@
                 </div> <!-- end wrapper -->
          </div><!-- end header wrap -->
          
+         <div class="newdiv"></div>
+         
 <!-- END HEADER -->
 
 
