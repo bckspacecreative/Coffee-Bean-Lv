@@ -34,9 +34,8 @@
                     </div><!-- end navigation -->
                 </div> <!-- end wrapper -->
          </div><!-- end header wrap -->
-         <p> Lets try again </p>
-         
-         <p>from the dev branch</p>
+	
+<p> Removing orig file from merge test </p>
 <!-- END HEADER -->
 
 
