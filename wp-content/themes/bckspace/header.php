@@ -35,12 +35,7 @@
                 </div> <!-- end wrapper -->
          </div><!-- end header wrap -->
          
-<<<<<<< HEAD
-         <p>I also want to add stuff </p>
-         
-=======
-         <div class="">I want to add stuff here</div>
->>>>>>> 5b260e7b279a48d0e07a7d9eba226127e54e98b9
+         <p>This should be an issue </p>
          
 <!-- END HEADER -->
 
