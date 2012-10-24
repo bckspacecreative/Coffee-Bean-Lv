@@ -35,6 +35,7 @@
                 </div> <!-- end wrapper -->
          </div><!-- end header wrap -->
          
+         <p>I also want to add stuff </p>
          
          
 <!-- END HEADER -->
