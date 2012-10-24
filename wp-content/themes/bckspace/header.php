@@ -35,12 +35,6 @@
                 </div> <!-- end wrapper -->
          </div><!-- end header wrap -->
 	
-<p> Removing orig file from merge test </p>
-         <p> Lets try again </p>
-         
-         <p>from the dev branch</p>
-         
-         <p>Check Branch Change</p>
 <!-- END HEADER -->
 
 
