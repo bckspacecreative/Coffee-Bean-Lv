@@ -744,8 +744,25 @@ hr {
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-border: 1px solid #CDC3B7;
-background: #EDE4D4 url(includes/accordion/images/ui-bg_glass_70_ede4d4_1x400.png) 50% 50% repeat-x;
+    border: 1px solid #CDC3B7;
+    background: #EDE4D4 url(includes/accordion/images/ui-bg_glass_70_ede4d4_1x400.png) 50% 50% repeat-x;
+}
+
+/* =CONTACT FORM 7
+----------------------------------------------- */
+div.wpcf7-validation-errors {
+    display: none !important;
+}
+
+.wpcf7-not-valid-tip {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    background: none;
+    border: none;
+    font-size: 10pt;
+    width: 10px;
+    padding: 2px;
 }
 
 /* =CUSTOM FONTS
