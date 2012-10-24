@@ -35,6 +35,7 @@
                 </div> <!-- end wrapper -->
          </div><!-- end header wrap -->
          
+<div class="">Lets resolve this coming conflict</div>
          
 <!-- END HEADER -->
 
