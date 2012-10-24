@@ -35,6 +35,7 @@
                 </div> <!-- end wrapper -->
          </div><!-- end header wrap -->
          
+	 <div class="new">hello I am the new div</div>
          
          
 <!-- END HEADER -->
