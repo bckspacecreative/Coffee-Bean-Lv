@@ -1,9 +1,9 @@
-
+<div class="wrapper">
         <div class="footer-wrap">
-            
+            <?php wp_nav_menu( array( 'menu' => 'footer' )); ?>
         </div> <!-- end footer wrap -->
         
-        <?php if( function_exists('bck_slider') ) : bck_slider(); endif; ?>
+        
 
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/includes/slider/js/jquery.nivo.slider.js"></script>
     <script type="text/javascript">
@@ -28,7 +28,7 @@
     });
     </script>
     
-        
+        </div>
 <?php wp_footer(); ?>
 
 </body>

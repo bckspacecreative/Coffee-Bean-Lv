@@ -66,9 +66,14 @@
     * Creates our link for read more.
     *  
     */
-    function jdev_continue_reading_link() {
-
-            return ' <a href="'. esc_url( get_permalink() ) . '">' . __( '<span class="read-more">Read More</span>', 'bckspace' ) . '</a>';
+    function jdev_continue_reading_link() {  
+        global $bckReadMore;
+        
+        if( $bckReadMore == false ) {
+             return '';       
+        } else {
+            return ' <a href="'. esc_url( get_permalink() ) . '">' . __( '<span class="read-more">Read More</span>', 'bckspace' ) . '</a>';     
+        }
 
     }
     
@@ -689,8 +694,9 @@ function bck_get_sidebar_nav( $post ) {
             $args = array('post_type' => 'bck-slider', 'posts_per_page' => 3, 'order' => 'ASC');
             $loop = new WP_Query($args);
             
-            global $bck_excerpt_length;
+            global $bck_excerpt_length, $bckReadMore;
             $bck_excerpt_length = 20;
+            $bckReadMore = false;
             
             while( $loop->have_posts()) : $loop->the_post();
                 echo '<div class="slider-copy">';
@@ -710,6 +716,8 @@ function bck_get_sidebar_nav( $post ) {
             wp_reset_query();
 
             echo '</div>';
+            
+            $bckReadMore = true;
 //
 //            $args = array('post_type' => 'bck-slider', 'posts_per_page' => 3, 'order' => 'ASC');
 //            $loop = new WP_Query($args);

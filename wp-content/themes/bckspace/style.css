@@ -283,12 +283,14 @@ ul.sub-menu {
     top: 30px;
     background: #FFF;
     z-index: 10;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 ul.sub-menu li {
     display: block;
     border-right: 0;
-    padding: 10px 5px;
+    padding: 7px 5px;
 }
 
 .navigation ul li a:hover ul.sub-menu {
@@ -363,12 +365,13 @@ input[type="text"], textarea {
 }
 
 input[type="submit"] {
-    border: 1px solid #e6e6e6;
-    background: #FFF;
-    padding: 4px;
-    color: #999;
-    display: block;
-    cursor: pointer
+    background: url(images/jpeg.jpeg) no-repeat;
+    width: 116px;
+    height: 60px;
+    border: none;
+    float: left;
+    cursor: pointer;
+    text-indent: 150px;
 }
 input[type="text"] { height: 16px; }
 textarea { height: 150px }
@@ -395,7 +398,7 @@ form p {
 ----------------------------------------------- */
 .sub-section {
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 20px 60px 20px;
     background: #f1f1f1;
     margin: 20px 0;
     height: 220px;
@@ -610,9 +613,13 @@ ul.children li.comment { border-bottom: none;}
 /* =Footer
 ----------------------------------------------- */
 .footer-wrap {
-    border-top: 1px dotted;
     margin: 30px auto;
-    padding: 50px 0 5px;
+    padding: 15px;
+    color: dimGray;
+    font-weight: normal;
+    clear: both;
+    background: #d9d9d9;
+    border-radius: 10px;
 }
 
 .function-of-the-day {
@@ -623,6 +630,19 @@ ul.children li.comment { border-bottom: none;}
 
 .function-of-the-day p {
     color: #999;
+}
+
+.footer-wrap ul.menu li {
+    display: inline;
+    margin: 0 20px 0 0;
+}
+
+.footer-wrap ul.menu li a {
+    color: #919191;
+}
+
+.footer-wrap ul.menu li a:hover {
+    color: #4D4D4D;
 }
 
 .tweet-wrap { margin: 0 0 20px 0 }
@@ -646,7 +666,10 @@ ul.children li.comment { border-bottom: none;}
 .social {
     position: absolute;
     right: 10px;
-    bottom: 0;
+    bottom: 10px;
+}
+.social img {
+    margin-right: 10px;
 }
 
 .sign-up p { color: #2d3235; line-height: 18px }
@@ -716,6 +739,8 @@ hr {
     border: none;
     background: none;
     height: auto;
+    font-size: 12px;
+    color: #474747;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
