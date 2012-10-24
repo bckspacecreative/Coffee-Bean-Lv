@@ -38,6 +38,8 @@
          <p>This should be an issue </p>
 <div class="">Lets resolve this coming conflict</div>
 <div></div>
+
+<p>I will commit both changes, some should be coming down from the upstream repo</p>
          
 <!-- END HEADER -->
 
