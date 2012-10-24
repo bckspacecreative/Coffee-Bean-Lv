@@ -38,7 +38,12 @@
          <p>This should be an issue </p>
 <div class="">Lets resolve this coming conflict</div>
 <div></div>
+<<<<<<< .merge_file_lXa0Ib
 <p>ok cool I think I got this</p>
+=======
+
+<p>I will commit both changes, some should be coming down from the upstream repo</p>
+>>>>>>> .merge_file_1IQWjy
          
 <!-- END HEADER -->
 
