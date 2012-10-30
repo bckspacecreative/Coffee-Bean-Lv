@@ -804,6 +804,3 @@ function bck_get_sidebar_nav( $post ) {
         }
 
         add_shortcode('mailChimp', 'mailChimps');
-        
-        
-        

@@ -20,6 +20,10 @@
         <!--[if IE 7]>
             <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/includes/ie-styles/ie7.css" />
         <![endif]-->
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>  
+        <script src="<?php echo get_template_directory_uri() ?>/includes/js/cufon-yui.js"></script>
+        <script src="<?php echo get_template_directory_uri() ?>/includes/js/Archer_Semibold_375-Archer_Semibold_375.font.js"></script>
 
 	<?php wp_head(); ?>
 </head>
@@ -35,6 +39,7 @@
                 </div> <!-- end wrapper -->
          </div><!-- end header wrap -->
 	
+
 <!-- END HEADER -->
 
 

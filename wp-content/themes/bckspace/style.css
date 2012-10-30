@@ -172,7 +172,7 @@ h2.entry-title, h2.entry-title a {
 
 h2, h2 a {
     color: #716FB3;
-    font-size: 20px;
+    font-size: 23px;
     margin: 0 0 10px 0;
 }
 
@@ -575,7 +575,7 @@ ul.children li.comment { border-bottom: none;}
 
 .sidebar-title {
     color: #887066;
-    font-size: 22px;
+    font-size: 26px;
     text-decoration: none;
     display: block;
     padding: 0 0 10px 0;
@@ -733,6 +733,7 @@ hr {
 ----------------------------------------------- */
 #accordion h3.ui-accordion-header {
     color: #630;
+    font-weight: bold;
 }
 
 #accordion .ui-accordion-content {
@@ -754,15 +755,10 @@ div.wpcf7-validation-errors {
     display: none !important;
 }
 
-.wpcf7-not-valid-tip {
+div.wpcf7-mail-sent-ok {
+    margin: 40px 0 0 0 !important;
+    border: none !important;
     position: absolute;
-    right: 0;
-    z-index: 100;
-    background: none;
-    border: none;
-    font-size: 10pt;
-    width: 10px;
-    padding: 2px;
 }
 
 /* =CUSTOM FONTS

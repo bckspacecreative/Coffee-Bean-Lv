@@ -2,7 +2,10 @@
         <div class="footer-wrap">
             <?php wp_nav_menu( array( 'menu' => 'footer' )); ?>
         </div> <!-- end footer wrap -->
-        
+
+    <script type="text/javascript"> Cufon.now(); </script>  
+    <script type="text/javascript">  Cufon.replace('h2.entry-title');  </script>
+       
         
 
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/includes/slider/js/jquery.nivo.slider.js"></script>
@@ -27,8 +30,11 @@
         $( "#accordion" ).accordion();
     });
     </script>
-    
+
         </div>
+
+   <script type="text/javascript">  Cufon.replace('h2');  </script>  
+   <script type="text/javascript">  Cufon.replace('.sidebar-title');  </script>  
 <?php wp_footer(); ?>
 
 </body>

@@ -30,7 +30,7 @@ get_header(); ?>
                 $query = new WP_Query($args); 
                 while($query->have_posts() ) : $query->the_post();
                     echo '<div class="cta-home">';
-                    echo '<h2 entry-title>';
+                    echo '<h2 class="entry-title">';
                     the_title();
                     echo '</h2>';
                     echo '<a href="';
